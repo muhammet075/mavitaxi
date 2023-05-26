@@ -11,6 +11,10 @@
     padding: 15px 0;
 }
 
+.header > div:nth-of-type(1) > button{ 
+    display: none;
+}
+
 .header > div:nth-of-type(1) > section{
     display: flex;
     justify-content: space-between;
@@ -41,6 +45,10 @@
     width: 100%;
 }
 
+.header > div:nth-of-type(2) > div{
+    display: none;
+}
+
 .header > div:nth-of-type(2) > nav{
     max-width: 1300px;
     margin: 0 auto;
@@ -66,4 +74,110 @@
     height: 25px;
     background-image: url(/taxipatterndesktop.svg);
     box-shadow: 0 3px 8px rgba(0,0,0,.24);
+}
+
+
+@media only screen and (max-width: 1315px) {
+    .header > div:nth-of-type(1){
+        padding: 15px;
+    }
+
+    .header > div:nth-of-type(2) > nav{
+        padding: 10px 15px;
+    }
+}
+
+
+@media only screen and (max-width: 750px) {
+    .header{
+        padding-bottom: 30px;
+    }
+
+    .header > div:nth-of-type(2) > nav section ul{
+        justify-content: space-between;
+    }
+
+    .header > div:nth-of-type(2) > nav section ul li{
+        margin: 0;
+    }
+
+    .header > div:nth-of-type(3){
+        height: 30px;
+        background-image: url(/taxipatternmobile.svg);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .header > div:nth-of-type(1) > button{ 
+        display: block;
+        position: absolute;
+        top: -40px;
+        bottom: 0;
+        height: 50px;
+        margin: auto;
+        background: none;
+        border: none;
+    }
+
+    .header > div:nth-of-type(1) > button img{ 
+        width: 40px;
+        height: auto;
+    }
+
+    .header > div:nth-of-type(1) > section{
+        justify-content: center;
+    }
+
+    .header > div:nth-of-type(1) > section:nth-of-type(1) ul{
+        display: none;
+    }
+
+    .header > div:nth-of-type(2){
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: #0000008c;
+        z-index: 99999;
+    }
+
+    .header > div:nth-of-type(2) > nav{
+        position: absolute;
+        left: -1000px;
+        background-color: #ffff;
+        width: 75%;
+        height: 100%;
+        margin: 0;
+    }
+
+    .header > div:nth-of-type(2) > div{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        margin: 0;
+    }
+
+    .header > div:nth-of-type(2) > div > img{
+        width: 25px;
+        height: auto;
+        margin: 25px 0 0 0;
+        
+    }
+
+    .header > div:nth-of-type(2) > nav section ul{
+        justify-content: space-between;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .header > div:nth-of-type(2) > nav section ul li{
+        font-size: 1.5em;
+        margin: 0 0 20px 0;
+    }
 }

@@ -9,3 +9,33 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.blockhamburger{
+  display: block !important;
+}
+
+.openhamburger {
+    animation: openhamburger 1s forwards
+}
+
+.closehamburger {
+    animation: closehamburger 1s forwards
+}
+
+@keyframes openhamburger {
+    0% {
+        left: -1000px
+    }
+    to {
+        left: 0
+    }
+}
+
+@keyframes closehamburger {
+    0% {
+        left: 0
+    }
+    to {
+        left: -1000px
+    }
+}
