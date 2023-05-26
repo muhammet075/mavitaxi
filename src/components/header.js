@@ -35,9 +35,9 @@ function Header() {
           </Link>
 
           <ul>
-            <li><Link href="">info@mavitaxi.nl</Link></li>
-            <li><Link href="">06123456789</Link></li>
-            <li><Link href="">WhatsApp</Link></li>
+            <li><Link href=""><span><i class="fa-solid fa-envelope"></i></span> info@mavitaxi.nl</Link></li>
+            <li><Link href=""><span><i class="fa-solid fa-phone"></i></span> 06123456789</Link></li>
+            <li><Link href=""><span><i class="fa-brands fa-whatsapp"></i></span> WhatsApp</Link></li>
           </ul>
         </section>
 
