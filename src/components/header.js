@@ -51,10 +51,10 @@ function Header() {
           <section>
             <ul>
               <li><Link href="/" onClick={closeHamburger}>Home</Link></li>
-              <li><Link href="/" onClick={closeHamburger}>Prijzen</Link></li>
-              <li><Link href="/" onClick={closeHamburger}>Over Ons</Link></li>
-              <li><Link href="/" onClick={closeHamburger}>Rij Gebieden</Link></li>
-              <li><Link href="/" onClick={closeHamburger}>Afspraak</Link></li>
+              <li><Link href="/prijzen" onClick={closeHamburger}>Prijzen</Link></li>
+              <li><Link href="/overons" onClick={closeHamburger}>Over Ons</Link></li>
+              <li><Link href="/rijgebieden" onClick={closeHamburger}>Rij Gebieden</Link></li>
+              <li><Link href="/afspraak" onClick={closeHamburger}>Afspraak</Link></li>
             </ul>
           </section>
         </nav>
